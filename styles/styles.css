@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.container {
+    min-height: 600px;
+    padding: 4rem 2rem;
+}
+
+.container-main {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/** START HOME SECTION **/
+
+#home {
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.emo-2 {
+    display: none;
+}
+
+.home-left {
+    display: grid;
+    align-content: center;
+}
+
+.home-left h1 {
+    font-size: 2.3rem;
+}
+
+.home-left p {
+    font-size: 1.2rem;
+}
+
+.home-right img {
+    width: 80%;
+}
+
+.home-right {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    #home {
+        grid-template-columns: 1fr;
+    }
+
+    .home-right {
+        justify-content: center;
+    }
+    
+    .emo-1 {
+        display: none;
+    }
+
+    .emo-2 {
+        display: block;
+    }
+
+    .home-right {
+        order: 1;
+ 
+    }
+
+    .home-left {
+        order: 2;
+        text-align: center;
+    }
+}
+
+/** END HOME SECTION **/
+
+/** START ABOUT SECTION **/
+
+#about {
+    text-align: center;
+}
+
+
+#about svg {
+    max-width: 100px;
+}
+
+#about h1 {
+    text-align: center;
+
+}
+
+#about p {
+    font-size: 1.5rem;
+    margin: 3rem 0;
+}
+
+#about img {
+    width: 50%;
+}
+
+@media (max-width:600px) {
+    
+    #about img {
+        width: 90%;
+    }
+    
+}
+
+/** END ABOUT SECTION **/
+
+/** START SONGS SECTION **/
+
+#songs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#songs img {
+    max-width: 400px;
+    
+}
+
+#songs h1 {
+    text-align: center;
+}
+
+.songs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.songs {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+}
+
+.songs img {
+    width: 100%;
+}
+
+.songs h2 {
+    margin-bottom: 2rem;
+}
+
+.songs a {
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+@media (max-width:600px) {
+
+    }
+
+
+/** END SONGS SECTION **/
+
+/** START MOMENTS SECTION **/
+
+#moment {
+    text-align: center;
+}
+
+#moment p {
+    font-size: 1.3rem;
+}
+
+.last-p-moment {
+    margin-top: 4rem;
+}
+
+.moment-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+#moment img {
+    width: 90%;
+    max-width: 400px;
+}
+
+.image {
+    margin: 4rem 0;
+}
+
+
+/** END MOMENTS SECTION **/
+
+/** START TIMELINE SECTION **/
+
+#timeline {
+    text-align: center;
+}
+
+#timeline img {
+    width: 90%;
+    max-width: 400px;
+}
+
+.timelines {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    margin: 2rem 0;
+}
+
+.time-right {
+    display: grid;
+    align-items: center;
+}
+
+
+
+@media (max-width:600px) {
+    .timelines {
+        grid-template-columns: 1fr;
+            margin-bottom: 6rem;
+    }
+}
+
+/** END TIMELINE SECTION **/
+
+/** START CLOSING SECTION **/
+
+#closing {
+    text-align: center;
+}
+
+#closing p {
+    font-size: 1.3rem;
+}
+
+#closing img {
+    width: 90%;
+    max-width: 400px;
+}
+
+#closing h1 {
+    margin: 2rem 0;
+}
+
+
+/** END CLOSING SECTION **/
+
